@@ -152,3 +152,28 @@ section a {
 .skills-container div:hover {
   border: 2px solid #597b6a;
 }
+
+/* Experience section */
+
+.experiences h3,
+#education h3 {
+  margin-bottom: 2px;
+}
+
+.grey {
+  color: #8e8e8e;
+  margin-top: 2px;
+}
+
+.experiences,
+.degrees {
+  width: 97%;
+}
+
+.experiences li {
+  margin-top: 5px;
+}
+
+#education h4 {
+  color: #aaa;
+}
