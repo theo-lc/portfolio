@@ -74,3 +74,47 @@ body {
   list-style-type: none;
   margin: 10px auto;
 }
+
+/* Smooth scrolling sections */
+
+.main {
+  height: 100vh;
+  margin-left: 300px;
+  width: calc(100% - 300px);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
+  /* flex: 1; */
+}
+
+.main section {
+  scroll-snap-align: start;
+}
+
+/* A section takes all the space left on the screen */
+section {
+  padding-top: 50px;
+  height: 100%;
+  width: calc(100% - 50px);
+  padding-left: 50px;
+}
+
+section a {
+  color: blue;
+}
+
+.strength {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.strength span {
+  margin-bottom: 8px;
+}
+
+.strength i {
+  color: #597b6a;
+}
