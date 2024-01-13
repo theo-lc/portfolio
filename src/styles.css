@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto";
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  /* display: flex; */
+  overflow: hidden;
+}
+
+/* Sidebar */
+
+.sidebar {
+  /* colors and style */
+  float: left;
+  color: #fff;
+  background-color: #597b6a;
+  text-align: center;
+  /* sizes */
+  width: 300px;
+  height: 100vh;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex: 0;
+
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main h2,
+.summary a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary a {
+  margin: 15px;
+  color: #ccc;
+  display: block;
+}
+
+/* Current section as its color white in the summary */
+.summary a.current {
+  color: #fff;
+}
+
+.summary a:hover {
+  color: #eee;
+}
+
+/* Profile image */
+.sidebar img {
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 35%;
+}
+
+.contact {
+  margin-bottom: 10%;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  margin: 10px auto;
+}
