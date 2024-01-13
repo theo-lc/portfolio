@@ -93,6 +93,8 @@ body {
   scroll-snap-align: start;
 }
 
+/* Sections */
+
 /* A section takes all the space left on the screen */
 section {
   padding-top: 50px;
@@ -104,6 +106,8 @@ section {
 section a {
   color: blue;
 }
+
+/* About section */
 
 .strength {
   margin-left: 15px;
@@ -117,4 +121,34 @@ section a {
 
 .strength i {
   color: #597b6a;
+}
+
+/* Skills section */
+
+#skills li {
+  color: #597b6a;
+}
+
+#skills li span {
+  color: black;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-container div {
+  font-weight: lighter;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+.skills-container div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.skills-container div:hover {
+  border: 2px solid #597b6a;
 }
