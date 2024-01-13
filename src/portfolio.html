@@ -154,6 +154,99 @@
           </div>
         </div>
       </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="slider">
+          <div class="project first current" id="plrp-ps">
+            <h3>
+              Research project in transports and logistics for the last-mile
+              delivery in urban area
+              <span> 2021 </span>
+            </h3>
+            <div class="description">
+              <div>
+                As an intern in IMT Atlantique in Nantes. I worked on a research
+                project on the subject of last-mile delivery.
+                <ul>
+                  <li>Literature review</li>
+                  <li>
+                    Mathematical modeling in <b>Python</b> with <b>PuLP</b>
+                  </li>
+                  <li>
+                    Implementation of an Adaptative Large Neighborhood Search
+                    (ALNS) heuristic in <b>Julia</b>
+                  </li>
+                  <li>Map visualization with <b>Folium</b></li>
+                  <li>
+                    Working with realistic data obtained with
+                    <b>OpenRouteService</b>
+                  </li>
+                  <li>
+                    Collaborative writing in <b>LaTeX</b> with
+                    <b>OverLeaf</b> of a
+                    <a href="https://hal.science/hal-03631730">paper</a> in the
+                    European Journal of Operational Research (EJOR)
+                  </li>
+                </ul>
+              </div>
+              <img src="img/plrp-ps.drawio.svg" />
+            </div>
+            <div class="tags">
+              <a href="https://julialang.org/">Julia</a>
+              <a href="https://git-scm.com/">Git</a>
+              <a href="https://www.overleaf.com">LaTeX / Overleaf</a>
+              <a href="https://openrouteservice.org/">OpenRouteService</a>
+              <a href="https://www.python.org/">Python</a>
+              <a href="https://pypi.org/project/folium/">Folium</a>
+              <a href="https://pypi.org/project/PuLP/">PuLP</a>
+            </div>
+          </div>
+          <div class="project" id="vrp-d">
+            <h3>
+              Vehicle Routing Problem
+              <span> 2020 </span>
+            </h3>
+            <div class="description">
+              <p>Description du projet...</p>
+            </div>
+            <div class="tags">
+              <a href="https://www.python.org/">Python</a>
+              <a href="https://pypi.org/project/PuLP/">PuLP</a>
+              <a href="https://pypi.org/project/folium/">Folium</a>
+              <a href="https://www.overleaf.com">LaTeX / Overleaf</a>
+            </div>
+          </div>
+          <div class="project last" id="tsp-d">
+            <h3>
+              Traveling Salesman Problem with Drone (TSP-D)
+              <span> 2020 </span>
+            </h3>
+            <ul>
+              <li>Literature review</li>
+              <li>Heuristic implementation</li>
+              <li>Results analysis</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <!-- <a href="tsp-d.html">Learn more</a> -->
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <a class="prev" onclick="prevProject()" style="display: none">❮</a>
+          <a class="next" onclick="nextProject()">❯</a>
+        </div>
+        <div class="dots">
+          <a
+            href="#plrp-ps"
+            class="dot current"
+            onclick="switchColors(this);"
+          ></a>
+          <a href="#vrp-d" class="dot" onclick="switchColors(this);"></a>
+          <a href="#tsp-d" class="dot" onclick="switchColors(this);"></a>
+        </div>
+      </section>
     </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
