@@ -1,0 +1,35 @@
+var french = {
+  about: "à propos",
+  skills: "Compétences",
+  experience: "Expérience",
+  projects: "Projets",
+  education: "éducation",
+  backend_developer: "Développeur backend",
+  description:
+    "Je suis un développeur backend avec des compétences en optimisation et en frontend.",
+  strengths: "Qualités",
+  curious: "Curieux",
+  productive: "Productif",
+  learning: "Passion de l'apprentissage",
+  teamwork: "Travail d'équipe",
+  kindness: "Bienveillance",
+  growth_mindset: "Mentalité de croissance",
+  optimization: "Optimisation",
+  artelys_dates: " Juin 2022 - Décembre 2023 ",
+  ratp: "Maintenance et développement d'une application web pour la maintenance du matériel roulant de la RATP.",
+  agile: "Méthode agile",
+  producing:
+    "Production de code propre et efficient basé sur les spécifications.",
+  testing: "Tests, suivi et résolution d'anomalies",
+  documenting: "Création d'une documentation technique",
+  data: "Analyse de données pour le développement d'un prototype",
+  cleaning: "Nettoyage des données",
+  analyzing: "Analyse des données",
+  interpreting: "Interprétation des données",
+  internship: "Stage de fin  d'études",
+  internship_dates: "Février 2021 - Juin 2021",
+  research:
+    "Projet de recherche sur le thème du dernier-kilomètre en milieu urbain",
+  proposition:
+    "Proposition d'une métaheuristique pour aborder la problématique de densité urbaine et réduire les émissions",
+};

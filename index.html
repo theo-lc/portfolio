@@ -16,14 +16,14 @@
       <div class="presentation">
         <img src="src/img/photo-pro.jpg" alt="photo" />
         <h1>Théo Le Colleter</h1>
-        <h3>Backend Developer</h3>
+        <h3 data-i18n="backend_developer">Backend Developer</h3>
       </div>
       <div class="summary">
-        <a href="#about">About me</a>
-        <a href="#skills">skills</a>
-        <a href="#experience">experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#about" data-i18n="about">About me</a>
+        <a href="#skills" data-i18n="skills">skills</a>
+        <a href="#experience" data-i18n="experience">experience</a>
+        <a href="#projects" data-i18n="projects">Projects</a>
+        <a href="#education" data-i18n="education">Education</a>
       </div>
       <div class="contact">
         <p>
@@ -47,40 +47,56 @@
 
     <!-- More details about the projects I worked on...  -->
     <div class="main">
+      <div class="languages">
+        <div id="current-language"></div>
+        <div id="languages-wrapper">
+          <div id="en">
+            <img
+              src="src/img/united-kingdom.png"
+              onclick="changeLanguage('en')"
+            />
+          </div>
+          <div id="fr">
+            <img src="src/img/france.png" onclick="changeLanguage('fr')" />
+          </div>
+        </div>
+      </div>
       <section id="about">
-        <h2>About me</h2>
-        <p>I'm a backend developer with optimization and frontend skills.</p>
-        <h3>Strengths</h3>
+        <h2 data-i18n="about">About me</h2>
+        <p data-i18n="description">
+          I'm a backend developer with optimization and frontend skills.
+        </p>
+        <h3 data-i18n="strengths">Strengths</h3>
         <div class="strength">
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Curious
+            <span data-i18n="curious"> Curious </span>
           </span>
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Productive
+            <span data-i18n="productive"> Productive </span>
           </span>
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Love of learning
+            <span data-i18n="learning"> Love of learning </span>
           </span>
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Teamwork
+            <span data-i18n="teamwork"> Teamwork </span>
           </span>
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Kindness
+            <span data-i18n="kindness"> Kindness </span>
           </span>
           <span>
             <i class="fa-regular fa-circle-check"></i>
-            Growth mindset
+            <span data-i18n="growth_mindset"> Growth mindset </span>
           </span>
         </div>
       </section>
 
       <section id="skills">
-        <h2>skills</h2>
+        <h2 data-i18n="skills">skills</h2>
         <h3>Backend</h3>
         <div class="skills-container">
           <div>Java</div>
@@ -88,7 +104,7 @@
           <div>PostgreSQL</div>
           <div>REST API</div>
         </div>
-        <h3>Optimization</h3>
+        <h3 data-i18n="optimization">Optimization</h3>
         <div class="skills-container">
           <div>Julia (JuMP)</div>
           <div>Python (PuLP)</div>
@@ -108,47 +124,59 @@
       </section>
 
       <section id="experience">
-        <h2>experience</h2>
+        <h2 data-i18n="experience">experience</h2>
         <div class="experiences">
           <div class="artelys">
             <h3>
-              Backend Developer
-              <span> June 2022 - December 2023 </span>
+              <span class="job_title" data-i18n="backend_developer">
+                Backend Developer</span
+              >
+              <span data-i18n="artelys_dates"> June 2022 - December 2023 </span>
             </h3>
             <h3 class="grey">Artelys</h3>
             <ul>
-              <li>
+              <li data-i18n="ratp">
                 Maintenance and development of a web application for the
                 maintenance of rolling stock of Paris public transport
               </li>
               <ul>
-                <li>Agile workflow</li>
-                <li>Producing clean, efficient code based on specifications</li>
-                <li>Testing, tracking and fixing bugs</li>
-                <li>Creating technical documentation</li>
+                <li data-i18n="agile">Agile workflow</li>
+                <li data-i18n="producing">
+                  Producing clean, efficient code based on specifications
+                </li>
+                <li data-i18n="testing">Testing, tracking and fixing bugs</li>
+                <li data-i18n="documenting">
+                  Creating technical documentation
+                </li>
               </ul>
-              <li>Data analysis for the development of a prototype</li>
+              <li data-i18n="data">
+                Data analysis for the development of a prototype
+              </li>
               <ul>
-                <li>Cleaning data</li>
-                <li>Analyzing data</li>
-                <li>Interpreting data</li>
+                <li data-i18n="cleaning">Cleaning data</li>
+                <li data-i18n="analyzing">Analyzing data</li>
+                <li data-i18n="Interpreting">Interpreting data</li>
               </ul>
             </ul>
           </div>
           <div class="intern">
             <h3>
-              End-of-studies internship
-              <span> February 2021 - June 2021 </span>
+              <span class="job_title" data-i18n="internship">
+                End-of-studies internship
+              </span>
+              <span data-i18n="internship_dates">
+                February 2021 - June 2021
+              </span>
             </h3>
             <h3 class="grey">IMT Atlantique</h3>
             <ul>
-              <li>
+              <li data-i18n="research">
                 Research project on the subject of last-mile delivery in an
                 urban area
               </li>
               <li>
-                Proposition to tackle urban density and trafic and reduce
-                emissions
+                Metaheuristic proposition to tackle urban density and trafic and
+                reduce emissions
               </li>
             </ul>
           </div>
@@ -298,5 +326,7 @@
       </section>
     </div>
     <script type="text/javascript" src="src/script.js"></script>
+    <script type="text/javascript" src="languages/fr.js"></script>
+    <script type="text/javascript" src="translate.js"></script>
   </body>
 </html>

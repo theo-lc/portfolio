@@ -74,6 +74,34 @@ body {
   margin: 10px auto;
 }
 
+.languages {
+  box-sizing: border-box;
+  font-size: 15pt;
+  position: fixed;
+  z-index: 1;
+  right: 50px;
+}
+
+.languages #languages-wrapper {
+  display: none;
+}
+
+.languages:hover #languages-wrapper {
+  display: block;
+}
+
+.languages img {
+  width: 30px;
+}
+
+.languages img:hover {
+  cursor: pointer;
+}
+
+.languages img:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* Smooth scrolling sections */
 
 .main {
@@ -253,7 +281,7 @@ section a {
   padding: 15px 0;
 }
 
-h3 span:not(.location) {
+h3 span:not(.job_title) {
   float: right;
   color: #597b6a;
 }
