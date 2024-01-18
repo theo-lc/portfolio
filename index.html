@@ -18,12 +18,15 @@
         <h1>Théo Le Colleter</h1>
         <h3 data-i18n="backend_developer">Backend Developer</h3>
       </div>
-      <div class="summary">
-        <a href="#about" data-i18n="about">About me</a>
-        <a href="#skills" data-i18n="skills">skills</a>
-        <a href="#experience" data-i18n="experience">experience</a>
-        <a href="#projects" data-i18n="projects">Projects</a>
-        <a href="#education" data-i18n="education">Education</a>
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+        <div class="summary">
+          <a href="#about" data-i18n="about">About me</a>
+          <a href="#skills" data-i18n="skills">skills</a>
+          <a href="#experience" data-i18n="experience">experience</a>
+          <a href="#projects" data-i18n="projects">Projects</a>
+          <a href="#education" data-i18n="education">Education</a>
+        </div>
       </div>
       <div class="contact">
         <p>
@@ -184,33 +187,37 @@
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 data-i18n="projects">Projects</h2>
         <div class="slider">
           <div class="project first current" id="plrp-ps">
-            <h3>
-              Research project in transports and logistics for the last-mile
+            <h3 data-i18n="research_project">
+              Research project in transportation and logistics for the last-mile
               delivery in urban area
               <span> 2021 </span>
             </h3>
             <div class="description">
               <div>
-                As an intern in IMT Atlantique in Nantes. I worked on a research
-                project on the subject of last-mile delivery.
+                <div data-i18n="internship_description">
+                  As an intern in IMT Atlantique in Nantes. I worked on a
+                  research project on the subject of last-mile delivery.
+                </div>
                 <ul>
-                  <li>Literature review</li>
-                  <li>
+                  <li data-i18n="literature">Literature review</li>
+                  <li data-i18n="modeling">
                     Mathematical modeling in <b>Python</b> with <b>PuLP</b>
                   </li>
-                  <li>
+                  <li data-i18n="implementation">
                     Implementation of an Adaptative Large Neighborhood Search
                     (ALNS) heuristic in <b>Julia</b>
                   </li>
-                  <li>Map visualization with <b>Folium</b></li>
-                  <li>
+                  <li data-i18n="visualization">
+                    Map visualization with <b>Folium</b>
+                  </li>
+                  <li data-i18n="openrouteservice">
                     Working with realistic data obtained with
                     <b>OpenRouteService</b>
                   </li>
-                  <li>
+                  <li data-i18n="overleaf">
                     Collaborative writing in <b>LaTeX</b> with
                     <b>OverLeaf</b> of a
                     <a href="https://hal.science/hal-03631730">paper</a> in the
@@ -277,49 +284,54 @@
       </section>
 
       <section id="education">
-        <h2>Education</h2>
+        <h2 data-i18n="education">Education</h2>
         <div class="degrees">
           <div class="master">
-            <h3>
+            <h3 data-i18n="master">
               Master degree, University of Nantes
-              <span> September 2019 - June 2021 </span>
+              <span data-i18n="master_dates"> September 2019 - June 2021 </span>
             </h3>
-            <h3 class="grey">
+            <h3 class="grey" data-i18n="master_description">
               Computer Science, Optimization in Operations Research (RO)
             </h3>
             <ul>
-              <li>Optimization:</li>
+              <li data-i18n="optimization">Optimization:</li>
               <ul>
-                <li>Discrete and Combinatorial Optimization</li>
-                <li>Metaheuristics</li>
-                <li>Constraint Programming</li>
-                <li>Multi-Objective Optimization</li>
+                <li data-i18n="discrete">
+                  Discrete and Combinatorial Optimization
+                </li>
+                <li data-i18n="metaheuristic">Metaheuristics</li>
+                <li data-i18n="constraint">Constraint Programming</li>
+                <li data-i18n="moo">Multi-Objective Optimization</li>
               </ul>
-              <li>Data:</li>
+              <li>Data</li>
               <ul>
-                <li>Data analysis</li>
+                <li data-i18n="analyzing">Data analysis</li>
                 <li>Machine Learning</li>
-                <li>Data mining</li>
+                <li data-i18n="mining">Data mining</li>
               </ul>
-              <li>Specific domain of application:</li>
+              <li data-i18n="application">Application-specific courses</li>
               <ul>
-                <li>Transports and logistics</li>
-                <li>Planning and Scheduling</li>
+                <li data-i18n="transportation">Transportation and logistics</li>
+                <li data-i18n="scheduling">Planning and Scheduling</li>
               </ul>
             </ul>
           </div>
           <div class="bachelor">
-            <h3>
+            <h3 data-i18n="bachelor">
               Bachelor degree, University of Nantes
-              <span> September 2016 - June 2019 </span>
+              <span data-i18n="bachelor_dates">
+                September 2016 - June 2019
+              </span>
             </h3>
-            <h3 class="grey">Computer Science</h3>
+            <h3 class="grey" data-i18n="bachelor_description">
+              Computer Science
+            </h3>
             <ul>
-              <li>
+              <li data-i18n="moncton">
                 3<sup>rd</sup> year abroad in University of Moncton,
                 New-Brunswick, Canada
               </li>
-              <li></li>
             </ul>
           </div>
         </div>

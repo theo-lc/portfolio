@@ -32,4 +32,33 @@ var french = {
     "Projet de recherche sur le thème du dernier-kilomètre en milieu urbain",
   proposition:
     "Proposition d'une métaheuristique pour aborder la problématique de densité urbaine et réduire les émissions",
+  research_project: "Projet de recherche en transport et logistique",
+  internship_description:
+    "J'ai travaillé en tant que stagiaire à l'IMT Atlantique de Nantes sur un projet de recherche sur le sujet du dernier kilomètre.",
+  literature: "Revue de la litérature",
+  modeling: "Modélisation mathématique en Python avec PuLP",
+  implementation:
+    "Implémentation d'une heuristique ALNS (Adaptative Large Neighborhood Search) en Julia",
+  visualization: "Visualisation de carte avec Folium",
+  openrouteservice:
+    "Utilisation de données réalistes obtenues avec OpenRouteService",
+  overleaf:
+    "Rédaction collaborative d'un papier dans le journal EJOR (European Journal of Operational Research)",
+  master: "Master, Université de Nantes",
+  master_dates: "Septembre 2019 - Juin 2021",
+  master_description:
+    "Informatique, parcours Optimisation en Recherche Opérationnelle",
+  discrete: "Optimisation discrète et combinatoire",
+  metaheuristic: "Métaheuristiques",
+  constraint: "Programmation par Contraintes",
+  moo: "Optimisation multiobjectif",
+  mining: "Fouille de données",
+  application: "Cours spécifique au domaine d'application",
+  transportation: "Transport et logistique",
+  scheduling: "Plannification et ordonnancement",
+  bachelor: "Licence, Université de Nantes",
+  bachelor_dates: "Septembre 2016 - Juin 2019",
+  bachelor_description: "Informatique",
+  moncton:
+    "3ème année de licence en échange universitaire à l'Université de Moncton, Nouveau-Brunswick, Canada",
 };
