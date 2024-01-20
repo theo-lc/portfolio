@@ -74,6 +74,7 @@ body {
   margin: 10px auto;
 }
 
+/* Buttons' style for i18n */
 .languages {
   box-sizing: border-box;
   font-size: 15pt;
@@ -154,11 +155,7 @@ section a {
 /* Projects section with a list of project inside */
 /* with a slideshow of projects */
 .slider {
-  /* scroll-snap-type: x mandatory; */
-  /* overflow-x: scroll; */
-  /* overflow-x: hidden; */
   display: flex;
-  /* overflow-x: auto; */
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -173,9 +170,7 @@ section a {
   padding: 10px 20px;
   margin-right: 49px;
   min-width: calc(100% - 50px);
-  /* display: none; */
   scroll-snap-align: start;
-  /* position: relative; */
 }
 
 .project li:not(:last-child) {
@@ -281,7 +276,7 @@ section a {
   padding: 15px 0;
 }
 
-h3 span:not(.job_title) {
+h3 span:not(.title) {
   float: right;
   color: #597b6a;
 }
@@ -305,8 +300,6 @@ h3 span:not(.job_title) {
 .slider-buttons {
   top: -10%;
   position: relative;
-  /* transform: translateY(-50px); */
-  /* left: -25px; */
 }
 
 /* Position the "next button" to the right */

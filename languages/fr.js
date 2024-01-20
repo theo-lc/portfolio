@@ -1,10 +1,13 @@
 var french = {
+  /* Sidebar */
   about: "à propos",
   skills: "Compétences",
   experience: "Expérience",
   projects: "Projets",
   education: "éducation",
   backend_developer: "Développeur backend",
+
+  /* About */
   description:
     "Je suis un développeur backend avec des compétences en optimisation et en frontend.",
   strengths: "Qualités",
@@ -14,7 +17,11 @@ var french = {
   teamwork: "Travail d'équipe",
   kindness: "Bienveillance",
   growth_mindset: "Mentalité de croissance",
+
+  /* Skills */
   optimization: "Optimisation",
+
+  /* Experience */
   artelys_dates: " Juin 2022 - Décembre 2023 ",
   ratp: "Maintenance et développement d'une application web pour la maintenance du matériel roulant de la RATP.",
   agile: "Méthode agile",
@@ -32,7 +39,10 @@ var french = {
     "Projet de recherche sur le thème du dernier-kilomètre en milieu urbain",
   proposition:
     "Proposition d'une métaheuristique pour aborder la problématique de densité urbaine et réduire les émissions",
+
+  /* Projects */
   research_project: "Projet de recherche en transport et logistique",
+  research_project_dates: "Printemps - 2021",
   internship_description:
     "J'ai travaillé en tant que stagiaire à l'IMT Atlantique de Nantes sur un projet de recherche sur le sujet du dernier kilomètre.",
   literature: "Revue de la litérature",
@@ -44,6 +54,12 @@ var french = {
     "Utilisation de données réalistes obtenues avec OpenRouteService",
   overleaf:
     "Rédaction collaborative d'un papier dans le journal EJOR (European Journal of Operational Research)",
+  vrptwd: "Problème de tournées de véhicules avec fenêtres de temps et drones",
+  vrptwd_dates: "Hiver - 2020",
+  vrptwd_description: "",
+  tspd_dates: "Spring",
+
+  /* Education */
   master: "Master, Université de Nantes",
   master_dates: "Septembre 2019 - Juin 2021",
   master_description:
