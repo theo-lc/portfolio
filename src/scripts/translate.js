@@ -1,3 +1,5 @@
+// This file contains every methods used to switch languages
+
 function updateContent(langData) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
@@ -20,6 +22,7 @@ async function changeLanguage(lang) {
 
 window.addEventListener("DOMContentLoaded", async () => {
   const userPreferredLanguage = localStorage.getItem("language") || "fr";
+  console.log(userPreferredLanguage);
   if (userPreferredLanguage != "en") {
     const langData = french;
     updateContent(langData);
