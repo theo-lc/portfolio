@@ -1,0 +1,28 @@
+/* Buttons' style for i18n */
+.languages {
+  box-sizing: border-box;
+  font-size: 15pt;
+  position: fixed;
+  z-index: 1;
+  right: 50px;
+}
+
+.languages #languages-wrapper {
+  display: none;
+}
+
+.languages:hover #languages-wrapper {
+  display: block;
+}
+
+.languages img {
+  width: 30px;
+}
+
+.languages img:hover {
+  cursor: pointer;
+}
+
+.languages img:not(:last-child) {
+  margin-right: 10px;
+}
