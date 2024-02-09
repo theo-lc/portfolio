@@ -3,9 +3,11 @@
 let summaryLinks = document.querySelectorAll(".summary a");
 let mainSections = document.querySelectorAll(".main section");
 
+let main = document.querySelector(".main");
+
 main.addEventListener("scroll", (event) => {
   let fromTop = main.scrollTop;
-
+  console.log(fromTop);
   // Vertical scroll: highlight the corresponding href
   summaryLinks.forEach((link) => {
     let section = document.querySelector(link.hash);
@@ -16,8 +18,9 @@ main.addEventListener("scroll", (event) => {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
+
     let headerHeight =
-      windowWidth > 700 ? 0 : document.querySelector(".sidebar").offsetHeight;
+      windowWidth > 1060 ? 0 : document.querySelector(".sidebar").offsetHeight;
 
     if (
       section.offsetTop - headerHeight <= fromTop &&
@@ -31,4 +34,22 @@ main.addEventListener("scroll", (event) => {
       section.classList.remove("current");
     }
   });
+});
+
+let menu = document.querySelector(".menu");
+let summary = document.querySelector(".summary");
+summary = document.getElementById(summary.id);
+
+let header = document.querySelector(".sidebar");
+
+menu.addEventListener("click", (event) => {
+  console.log("menu");
+  console.log(summary);
+  if (!summary.classList.contains("show")) {
+    summary.classList.add("show");
+    header.style.flexWrap = "wrap";
+  } else {
+    summary.classList.remove("show");
+    header.style.flexWrap = "nowrap";
+  }
 });

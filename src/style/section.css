@@ -7,9 +7,7 @@
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
   overflow-x: hidden;
-  /* flex: 1; */
 }
 
 .main section {
@@ -21,11 +19,150 @@
 /* A section takes all the space left on the screen */
 section {
   padding-top: 50px;
-  height: 100%;
+  height: 100vh;
   width: calc(100% - 50px);
   padding-left: 50px;
+  border-top: solid 1px #ccc;
 }
 
 section a {
   color: blue;
+}
+
+/* About */
+
+.strength {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.strength span {
+  margin-bottom: 8px;
+}
+
+.strength i {
+  color: #597b6a;
+}
+
+/* Skills */
+
+#skills li {
+  color: #597b6a;
+}
+
+#skills li span {
+  color: black;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills-container div {
+  font-weight: lighter;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+
+.skills-container div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.skills-container div:hover {
+  border: 2px solid #597b6a;
+}
+
+/* Experience */
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tags a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 2px 5px;
+  border: 2px solid #eee;
+  border-radius: 5%;
+  background-color: #eee;
+  margin: 20px 10px 0 0;
+}
+
+.tags a:hover {
+  background-color: #bbb;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.description img {
+  width: 50%;
+  min-width: 250px;
+}
+
+.description p {
+  width: 45%;
+}
+
+/* Project title and year are on the same line */
+.main h3 {
+  text-align: left;
+}
+
+.project {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-right: 49px;
+  min-width: calc(100% - 50px);
+  /* For the slider */
+  scroll-snap-align: start;
+}
+
+.project li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* Education */
+
+.degrees {
+  box-sizing: border-box;
+  /* border: 1px solid #ccc; */
+  padding: 15px 0;
+}
+
+h3 span:not(.title) {
+  float: right;
+  color: #597b6a;
+}
+
+.experiences h3,
+#education h3 {
+  margin-bottom: 2px;
+}
+
+.grey {
+  color: #8e8e8e;
+  margin-top: 2px;
+}
+
+.experiences,
+.degrees {
+  width: 97%;
+}
+
+.experiences li {
+  margin-top: 5px;
+}
+
+#education h4 {
+  color: #aaa;
 }

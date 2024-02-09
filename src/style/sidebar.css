@@ -48,16 +48,19 @@
 }
 
 /* Profile image */
-.sidebar img {
+.presentation img {
   margin-top: 15px;
   border-radius: 10px;
   width: 35%;
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10%;
   left: 0;
   right: 0;
   list-style-type: none;
-  margin: 10px auto;
+  margin: 15px auto;
+  gap: 10px;
 }

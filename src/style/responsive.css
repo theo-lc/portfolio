@@ -1,32 +1,78 @@
 /* When screen is too small, sidebar becomes a header */
-@media screen and (max-width: 750px) {
-  /* Scroll only on the sections part */
-  html {
-    overflow-y: hidden;
+@media screen and (max-width: 1060px) {
+  /* Sections take now all the width space */
+  .main {
+    width: 100%;
+    margin-left: 0;
+    overflow-y: auto;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    scroll-snap-type: none;
+  }
+
+  section {
+    padding-top: 0;
+    height: auto;
+    padding-bottom: 20px;
   }
 
   /* Make the sidebar a header */
   .sidebar {
     width: 100%;
     height: auto;
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
+    bottom: auto;
+    flex-wrap: wrap;
   }
 
   /* Change flex direction of element containing elements */
-  .menu i:not(:hover) ~ .summary:not(:hover) {
+  /* .menu i:not(:hover) ~ .summary:not(:hover) {
     display: none;
-  }
+  } */
 
   .contact {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    order: 2;
   }
 
   .presentation {
-    display: none;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    order: 1;
+  }
+
+  .name_position {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .presentation img {
+    margin: 5px 0;
+    width: 35px;
+  }
+
+  .presentation h1 {
+    font-size: medium;
+    margin: 0 5px 0 0;
+  }
+
+  .presentation h3 {
+    font-size: small;
+    margin: 0;
+  }
+
+  .menu {
+    right: 0;
+    order: 3;
   }
 
   .menu i {
@@ -37,11 +83,16 @@
   }
 
   .summary {
-    background-color: #597b6a;
-    border: 1px solid white;
+    display: none;
+    order: 4;
+    flex: 100%;
   }
 
-  .menu i:hover ~ .summary {
+  .summary.show {
+    display: block;
+  }
+
+  /* .menu i:hover ~ .summary {
     display: block;
 
     position: absolute;
@@ -50,7 +101,7 @@
   .summary:hover {
     display: block;
     position: absolute;
-  }
+  } */
 
   .contact span {
     font-size: 0;
@@ -64,9 +115,14 @@
     width: 10%;
   }
 
-  /* Sections take now all the width space */
-  .main {
+  .description {
+    flex-direction: column;
     width: 100%;
-    margin-left: 0;
+  }
+
+  .languages {
+    position: relative;
+    z-index: 1;
+    order: 3;
   }
 }

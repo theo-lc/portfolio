@@ -15,7 +15,7 @@ title: home
       src="https://kit.fontawesome.com/550f1700c1.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="src/styles.css" />
+    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
     <link rel="stylesheet" href="src/style/styles.css" />
     <link rel="stylesheet" href="src/style/section.css" />
     <link rel="stylesheet" href="src/style/languages.css" />
@@ -24,19 +24,18 @@ title: home
     <title>Théo Le Colleter</title>
   </head>
   <body>
+    <!-- prettier-ignore -->
     {% include sidebar.html %}
 
     <!-- More details about the projects I worked on...  -->
     <div class="main">
       <!-- prettier-ignore -->
-      {% include languages.html %}
       {% include about.html %}
       {% include skills.html %}
       {% include experience.html %} 
       {% include projects.html %}
       {% include education.html %}
     </div>
-    <script type="text/javascript" src="src/script.js"></script>
     <script type="text/javascript" src="src/scripts/translate.js"></script>
     <script type="text/javascript" src="src/languages/fr.js"></script>
     <script type="text/javascript" src="src/scripts/sidebar.js"></script>
